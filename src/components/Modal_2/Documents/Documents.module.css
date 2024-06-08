@@ -1,0 +1,10 @@
+.documents-title{
+    text-transform: uppercase;
+    color: lightskyblue;
+    font-size: 0.80rem;
+}
+.sub-text{
+    font-size: 0.80rem;
+    color: grey;
+    font-weight: 400;
+}

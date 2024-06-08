@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Modal1 from './components/Modal_1/Modal1';
+import Modal2 from './components/Modal_2/Modal2';
+import BackAndNext from './components/Footer/Footer';
 
 function App() {
+  const [activeModal, setActiveModal] = useState(1);
+
+  const handleNext = () => {
+    setActiveModal(activeModal === 1 ? 2 : activeModal);
+  };
+
+  const handleBack = () => {
+    setActiveModal(activeModal === 2 ? 1 : activeModal);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='render-modal'>
+        <div className='modal-top'>
+          <h4 className='modal-heading'>
+            Create new Account
+          </h4>
+          <a className='contact'>
+            Contact Us
+          </a>
+        </div>
+        <div>
+          {activeModal === 1 ? <Modal1 /> : <Modal2 />}
+        </div>
+        <BackAndNext onNext={handleNext} onBack={handleBack} dataIsValid={true} />
+      </div>
+    </>
   );
 }
 

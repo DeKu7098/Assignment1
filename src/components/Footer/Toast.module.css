@@ -1,0 +1,25 @@
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toast p {
+    margin: 0;
+}
+
+.toast button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

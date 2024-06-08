@@ -1,0 +1,27 @@
+.nav-buttons{
+    margin-top: 1.25rem;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.back-btn{
+    border: none;
+    background: transparent;
+    color: rgb(122, 122, 238);
+    font-size: 0.80rem;
+    position: absolute;
+    left: 0;
+}
+.left-icon,.right-icon{
+    height: 1rem;
+    width: 1rem;
+}
+.next-btn{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color:rgb(122, 122, 238);
+    border-radius: 4px;
+    color: white;
+    font-size: 0.75rem;
+}

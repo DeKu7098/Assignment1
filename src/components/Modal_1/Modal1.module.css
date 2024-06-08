@@ -1,0 +1,31 @@
+.modal-box{
+    margin-top: 1.25rem;
+    padding: 2rem !important;
+    border: 1px solid rgb(225, 218, 218);
+    border-radius: 7px;
+    background-color: white;
+}
+.step{
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    color: grey;
+    margin-bottom: 0;
+}
+.yourProfile{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(54, 121, 193);
+    margin-top: 0.5rem;
+}
+.sub-text{
+    text-align: center;
+    color: rgb(103, 100, 100);
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+.value-fields{
+    margin-top: 1.5rem;
+}
